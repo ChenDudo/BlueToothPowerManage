@@ -3,6 +3,7 @@ package com.mindmotion.mm32blescanner.adapter;
 import android.content.Context;
 import android.os.Parcelable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -18,6 +19,8 @@ import com.mindmotion.mm32blescanner.R;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
+import static android.support.constraint.Constraints.TAG;
 
 public class DeviceAdapter extends BaseAdapter {
 
@@ -119,10 +122,12 @@ public class DeviceAdapter extends BaseAdapter {
         final BleDevice bleDevice = getItem(position);
         if (bleDevice != null) {
             boolean isConnected = BleManager.getInstance().isConnected(bleDevice);
-            String mmBleMac = "ED:67:17";
+            //String mmBleMac = "ED:67:17";
+            String mmBleMac1 = "D:67:17";
             String name = bleDevice.getName();
             String mac = bleDevice.getMac();
-            boolean isMM32Mac = mac.substring(0,mmBleMac.length()).equals(mmBleMac);
+            //Log.i(TAG, "isMacAdr" +  mac.substring(1,mmBleMac1.length()+1));
+            boolean isMM32Mac = mac.substring(1,mmBleMac1.length()+1).equals(mmBleMac1);
             int rssi = bleDevice.getRssi();
             if (name == null)
                 name = "N/A";
