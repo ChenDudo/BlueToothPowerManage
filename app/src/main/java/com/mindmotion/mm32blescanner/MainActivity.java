@@ -45,6 +45,7 @@ public class MainActivity extends AppCompatActivity
     private static final int REQUEST_CODE_OPEN_GPS = 1;
     private static final int REQUEST_CODE_PERMISSION_LOCATION = 2;
     String ledName = "MMNJ LogoWall";
+    String powerName = "PowerManagerDevice";
     private DeviceAdapter deviceAdapter;
     private ProgressDialog progressDialog;
     private SectionsPagerAdapter sectionsPagerAdapter;
@@ -343,6 +344,13 @@ public class MainActivity extends AppCompatActivity
 
                     Intent intent = new Intent(MainActivity.this, MMNJ_LED.class);
                     intent.putExtra(MMNJ_LED.KEY_DATA, bleDevice);
+                    startActivity(intent);
+                }
+
+                if (bleDevice.getName().equals(powerName)) {
+
+                    Intent intent = new Intent(MainActivity.this, powermanager.class);
+                    intent.putExtra(powermanager.KEY_DATA, bleDevice);
                     startActivity(intent);
                 }
             }

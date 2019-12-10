@@ -17,9 +17,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".powermanager"
+            android:label="@string/title_activity_powermanager"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".MMNJ_LED"
             android:label="@string/title_activity_mmnj__led"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

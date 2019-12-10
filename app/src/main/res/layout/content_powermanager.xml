@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".powermanager"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_powermanager">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="347dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView_Canel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电源补给系统控制面板"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView_SysInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="System Info:"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_H"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hardware version"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/textView_S"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Software version"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_HW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" FV1B.2.0.2mmb.i" />
+
+                <TextView
+                    android:id="@+id/textView_SW"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" SV2.0.1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:text="Mac Address"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_mac"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView_batteryState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battery State:"
+            android:textAlignment="textStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_batteryLevel"
+                android:layout_width="21dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Battery Level      "
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_batteryHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=" Health" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Battery Capacity"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_capacity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" (0~100)%" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="364dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="21dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="24sp"
+            android:text="select charge time(min)"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_tim1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/button_tim2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="30" />
+
+            <Button
+                android:id="@+id/button_tim3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="45" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_tim4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="60" />
+
+            <Button
+                android:id="@+id/button_tim5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="90" />
+
+            <Button
+                android:id="@+id/button_tim6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="120" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_red_style"
+            android:text="confirm" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="327dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="System message:"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="336dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/button_inquire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Inquire"
+        android:background="@drawable/button_red_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+</android.support.constraint.ConstraintLayout>
