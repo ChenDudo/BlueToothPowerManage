@@ -363,16 +363,6 @@ public class MMNJ_LED extends AppCompatActivity{
         });
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "如意外退出，请断开并刷新连接后可进入本页面", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-
         Button timecheck = findViewById(R.id.bt_time);
         timecheck.setOnClickListener(new View.OnClickListener() {
             @Override

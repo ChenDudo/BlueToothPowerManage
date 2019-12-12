@@ -26,7 +26,7 @@
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_selectors"
         android:radius="80dp"
-        android:text="ON"
+        android:text="LongTime"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bt_PWM" />
 
@@ -37,7 +37,7 @@
         android:layout_marginStart="32dp"
         android:background="@drawable/button_selectors"
         android:radius="80dp"
-        android:text="OFF"
+        android:text="Disable"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bt_PWM" />
 
@@ -94,7 +94,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/button_red_style"
-        android:text="LED"
+        android:text="Power"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +108,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="74dp"
         android:background="@drawable/button_red_style"
-        android:text="Check Time"
+        android:text="Tim Sync"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toStartOf="@+id/bt_timmode"
         app:layout_constraintStart_toStartOf="parent"
@@ -122,7 +122,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="76dp"
         android:background="@drawable/button_red_style"
-        android:text="Auto Mode"
+        android:text="Auto"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bt_time"
@@ -136,7 +136,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="162dp"
         android:background="@drawable/button_red_style"
-        android:text="TIM"
+        android:text="scene"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -164,7 +164,7 @@
         android:layout_marginTop="4dp"
         android:layout_marginEnd="161dp"
         android:background="@drawable/button_selectors"
-        android:text="控制单元实时温度"
+        android:text="Control-Unit temperature"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
