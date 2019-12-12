@@ -1,6 +1,8 @@
 package com.mindmotion.mm32blescanner;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +18,8 @@ import com.mindmotion.blelib.callback.BleWriteCallback;
 import com.mindmotion.blelib.data.BleDevice;
 import com.mindmotion.blelib.exception.BleException;
 
+import java.lang.reflect.Field;
+
 public class powermanager extends AppCompatActivity {
 
     private static final String TAG = powermanager.class.getSimpleName();
@@ -28,6 +32,9 @@ public class powermanager extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 修改状态栏字体颜色为黑色，避免颜色冲突
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
         setContentView(R.layout.activity_powermanager);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

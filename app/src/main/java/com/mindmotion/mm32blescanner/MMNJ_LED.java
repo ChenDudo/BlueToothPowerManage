@@ -38,6 +38,10 @@ public class MMNJ_LED extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // 修改状态栏字体颜色为黑色，避免颜色冲突
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
         setContentView(R.layout.activity_mmnj__led);
         initData();
 
